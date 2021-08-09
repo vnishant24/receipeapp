@@ -33,7 +33,15 @@ const getSearch = e => {
 
 }
 return (
+    
     <div className="App">
+      <h2>Recipe App</h2>
+      <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" types="text" value={search} onChange ={updateSearch}/>
         <button className="search-button" type="submit">Search</button>
